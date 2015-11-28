@@ -1,0 +1,20 @@
+{
+  "name": "tastemade",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jethroguce/cooking-site.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jethroguce/cooking-site/issues"
+  },
+  "homepage": "https://github.com/jethroguce/cooking-site",
+  "scripts" : { "start" : "bower install" }
+}
