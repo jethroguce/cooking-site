@@ -4,9 +4,6 @@
   <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
   <link rel="stylesheet" href="/bower_components/angular-material/angular-material.css">
   <style type="text/css">
-    body{
-      min-height: 1000px;
-    }
     .header{
       margin-top: 15px;
       position: fixed;
@@ -33,13 +30,19 @@
       </div>
     </md-toolbar>
   </div>
-  <div ng-controller="YourController">
+  <div class="content" ng-controller="YourController">
     <div>
       <img src="/app/public/images/nljj3gxvnaxqqpxbj0na.jpg" style="width:100%;">
+    </div>
+    <div layout="column" layout-fill layout-align="center start">
+      <h3>Dishes</h3>
     </div>
     <md-content>
       Hello!
     </md-content>
+  </div>
+  <div class="footer">
+    
   </div>
 
   <script src="/bower_components/angular/angular.js"></script>
