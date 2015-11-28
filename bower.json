@@ -1,0 +1,33 @@
+{
+  "name": "cooking-class",
+  "version": "0.0.0",
+  "authors": [
+    "jethro <jethro.guce@myoffice.ph>"
+  ],
+  "description": "cooking class reservation and booking",
+  "main": "run.py",
+  "moduleType": [
+    "es6",
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "angularjs",
+    "angular-material",
+    "cooking",
+    "python",
+    "flask"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-material": "~0.11.4",
+    "angularjs": "~1.4.8"
+  }
+}

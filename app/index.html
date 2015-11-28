@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html ng-app="YourApp">
+<head>
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="/bower_components/angular-material/angular-material.css">
+  <style type="text/css">
+    body{
+      min-height: 1000px;
+    }
+    .header{
+      margin-top: 15px;
+      position: fixed;
+    }
+  </style>
+</head>
+<body layout="column">
+  <div class="header" ng-controller="headerController" layout="column" layout-fill>
+    <md-toolbar>
+      <div class="md-toolbar-tools">
+        <md-button class="md-icon-button" aria-label="Settings">
+          <md-icon md-svg-icon="img/icons/menu.svg"></md-icon>
+        </md-button>
+        <h2>
+          <span>Toolbar with Icon Buttons</span>
+        </h2>
+        <span flex></span>
+        <md-button class="md-icon-button" aria-label="Favorite">
+          <md-icon md-svg-icon="img/icons/favorite.svg" style="color: greenyellow;"></md-icon>
+        </md-button>
+        <md-button class="md-icon-button" aria-label="More">
+          <md-icon md-svg-icon="img/icons/more_vert.svg"></md-icon>
+        </md-button>
+      </div>
+    </md-toolbar>
+  </div>
+  <div ng-controller="YourController">
+    <div>
+      <img src="/app/public/images/nljj3gxvnaxqqpxbj0na.jpg" style="width:100%;">
+    </div>
+    <md-content>
+      Hello!
+    </md-content>
+  </div>
+
+  <script src="/bower_components/angular/angular.js"></script>
+  <script src="/bower_components/angular-aria/angular-aria.js"></script>
+  <script src="/bower_components/angular-animate/angular-animate.js"></script>
+  <script src="/bower_components/angular-material/angular-material.js"></script>
+  <script>
+
+    // Include app dependency on ngMaterial
+
+    angular.module( 'YourApp', [ 'ngMaterial' ] )
+      .controller("YourController", function () {
+        // body...
+      } )
+      .controller("headerController", function(){
+
+      });
+
+  </script>
+
+</body>
+</html>
