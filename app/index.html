@@ -3,6 +3,7 @@
 <head>
   <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
   <link rel="stylesheet" href="/bower_components/angular-material/angular-material.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <style type="text/css">
     .header{
       margin-top: 33px;
@@ -21,6 +22,10 @@
       padding-bottom: 84px;
       padding-top: 28px;
     }
+    #map{
+      min-width: 360px;
+      min-height: 360px;
+    }
   </style>
 </head>
 <body layout="column">
@@ -32,32 +37,191 @@
         </h2>
         <span flex></span>
         <div layout="row" layout-align="end center">
-          <md-button>
+          <md-button ng-href="#classes">
             Dishes
           </md-button>
-          <md-button>
+          <md-button ng-href="#location">
             Location
           </md-button>
-          <md-button>
+          <md-button ng-href="#contact">
             Contact
           </md-button>
-          <md-button>
+          <md-button ng-href="#about">
             About
           </md-button>
         </div>
       </div>
     </md-toolbar>
   </header>
-  <div class="content" ng-controller="YourController">
-    <div>
+  <div class="content" ng-controller="YourController" layout="column">
+    <div id="home" flex>
       <img src="/app/public/images/nljj3gxvnaxqqpxbj0na.jpg" style="width:100%;">
     </div>
-    <div layout="column" layout-fill layout-align="center start">
-      <h3>Dishes</h3>
+    <div id="classes" flex>
+      <md-whiteframe class="md-whiteframe-3dp" layout="column" layout-align="start center" >
+        <h1>Dishes</h1>
+        <div layout="row" flex-offset="10" flex="80" layout-wrap>
+          <md-card flex="30">
+            <img ng-src="/app/public/images/tempura.jpg" class="md-card-image" alt="Tempura">
+            <md-card-title>
+              <md-card-title-text>
+                <span class="md-headline">Tempura</span>
+              </md-card-title-text>
+            </md-card-title> 
+            <md-card-actions layout="row" layout-align="start center">
+              <md-card-icon-actions>
+                <md-button class="md-icon-button" aria-label="Favorite">
+                  <md-icon md-svg-icon="/bower_components/material-design-icons/img/icons/favorite.svg"></md-icon>
+                </md-button>
+                <md-button class="md-icon-button" aria-label="Share">
+                  <md-icon md-svg-icon="img/icons/share-arrow.svg"></md-icon>
+                </md-button>
+              </md-card-icon-actions>
+              <md-button>Action 1</md-button>
+              <md-button>Action 2</md-button>
+            </md-card-actions>
+            <md-card-content>
+              <p>
+                Raw vegetables or seafood are dunked in a simple batter and then briefly fried in a mild-flavored oil, just long enough for the batter to crisp and the food to cook through.
+              </p>
+            </md-card-content>
+          </md-card>
+          <md-card flex="30">
+            <img ng-src="/app/public/images/maki.jpg" class="md-card-image" alt="Maki">
+            <md-card-title>
+              <md-card-title-text>
+                <span class="md-headline">Makizushi</span>
+              </md-card-title-text>
+            </md-card-title>
+            <md-card-actions layout="row" layout-align="start center">
+              <md-card-icon-actions>
+                <md-button class="md-icon-button" aria-label="Favorite">
+                  <md-icon md-svg-icon="img/icons/favorite.svg"></md-icon>
+                </md-button>
+                <md-button class="md-icon-button" aria-label="Share">
+                  <md-icon md-svg-icon="img/icons/share-arrow.svg"></md-icon>
+                </md-button>
+              </md-card-icon-actions>
+              <md-button>Action 1</md-button>
+              <md-button>Action 2</md-button>
+            </md-card-actions>
+            <md-card-content>
+              <p>Makizushi is made by wrapping up fillings in rice and nori seaweed using some local , tasty ingredients
+                   Nikujaga is a very  traditional comfort food in Japan  . It’s the Japanese version of beef stew  with potatoes and other vegetables simmered in a sweet soy stock until meltingly tender.
+              </p>
+            </md-card-content>
+          </md-card>
+          <md-card flex="30">
+            <img ng-src="/app/public/images/chickn.jpg" class="md-card-image" alt="Chicken / Fish Teriyaki">
+            <md-card-title>
+              <md-card-title-text>
+                <span class="md-headline">Chicken / Fish Teriyaki</span>
+              </md-card-title-text>
+            </md-card-title>
+            <md-card-actions layout="row" layout-align="start center">
+              <md-card-icon-actions>
+                <md-button class="md-icon-button" aria-label="Favorite">
+                  <md-icon md-svg-icon="img/icons/favorite.svg"></md-icon>
+                </md-button>
+                <md-button class="md-icon-button" aria-label="Share">
+                  <md-icon md-svg-icon="img/icons/share-arrow.svg"></md-icon>
+                </md-button>
+              </md-card-icon-actions>
+              <md-button>Action 1</md-button>
+              <md-button>Action 2</md-button>
+            </md-card-actions>
+            <md-card-content>
+              <p>
+                Pieces of chicken breast  marinated in  soy sauce and  seasoned with sake, ginger, and sugar with very light but savory flavor
+              </p>
+            </md-card-content>
+          </md-card>
+          <md-card flex="30">
+            <img ng-src="/app/public/images/tempura.jpg" class="md-card-image" alt="Tempura">
+            <md-card-title>
+              <md-card-title-text>
+                <span class="md-headline">Tempura</span>
+              </md-card-title-text>
+            </md-card-title>
+            <md-card-actions layout="row" layout-align="start center">
+              <md-card-icon-actions>
+                <md-button class="md-icon-button" aria-label="Favorite">
+                  <md-icon md-svg-icon="img/icons/favorite.svg"></md-icon>
+                </md-button>
+                <md-button class="md-icon-button" aria-label="Share">
+                  <md-icon md-svg-icon="img/icons/share-arrow.svg"></md-icon>
+                </md-button>
+              </md-card-icon-actions>
+              <md-button>Action 1</md-button>
+              <md-button>Action 2</md-button>
+            </md-card-actions> 
+            <md-card-content>
+              <p>
+                Raw vegetables or seafood are dunked in a simple batter and then briefly fried in a mild-flavored oil, just long enough for the batter to crisp and the food to cook through.
+              </p>
+            </md-card-content>
+          </md-card>
+          <md-card flex="30">
+            <img ng-src="/app/public/images/maki.jpg" class="md-card-image" alt="Maki">
+            <md-card-title>
+              <md-card-title-text>
+                <span class="md-headline">Makizushi</span>
+              </md-card-title-text>
+            </md-card-title>
+            <md-card-actions layout="row" layout-align="start center">
+              <md-card-icon-actions>
+                <md-button class="md-icon-button" aria-label="Favorite">
+                  <md-icon md-svg-icon="img/icons/favorite.svg"></md-icon>
+                </md-button>
+                <md-button class="md-icon-button" aria-label="Share">
+                  <md-icon md-svg-icon="img/icons/share-arrow.svg"></md-icon>
+                </md-button>
+              </md-card-icon-actions>
+              <md-button>Action 1</md-button>
+              <md-button>Action 2</md-button>
+            </md-card-actions>
+            <md-card-content>
+              <p>Makizushi is made by wrapping up fillings in rice and nori seaweed using some local , tasty ingredients
+                Nikujaga is a very  traditional comfort food in Japan  . It’s the Japanese version of beef stew  with potatoes and other vegetables simmered in a sweet soy stock until meltingly tender.
+              </p>
+            </md-card-content>
+          </md-card>
+          <md-card flex="30">
+            <img ng-src="/app/public/images/chickn.jpg" class="md-card-image" alt="Chicken / Fish Teriyaki">
+            <md-card-title>
+              <md-card-title-text>
+                <span class="md-headline">Chicken / Fish Teriyaki</span>
+              </md-card-title-text>
+            </md-card-title>
+            <md-card-actions layout="row" layout-align="start center">
+              <md-card-icon-actions>
+                <md-button class="md-icon-button" aria-label="Favorite">
+                  <md-icon md-svg-icon="img/icons/favorite.svg"></md-icon>
+                </md-button>
+                <md-button class="md-icon-button" aria-label="Share">
+                  <md-icon md-svg-icon="img/icons/share-arrow.svg"></md-icon>
+                </md-button>
+              </md-card-icon-actions>
+              <md-button>Action 1</md-button>
+              <md-button>Action 2</md-button>
+            </md-card-actions>
+            <md-card-content>
+              <p>
+                Pieces of chicken breast  marinated in  soy sauce and  seasoned with sake, ginger, and sugar with very light but savory flavor
+              </p>
+            </md-card-content>
+          </md-card>
+        </div>
+      </md-white-frame>
     </div>
-    <md-content>
-      Hello!
-    </md-content>
+    <div id="location" flex layout="column" layout-align="start center">
+      <h2>Location</h2>
+      <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" width="642" height="443" src="https://maps.google.com/maps?hl=en&q=tokyo&ie=UTF8&t=roadmap&z=6&iwloc=B&output=embed"></iframe>
+    </div>
+    <div id="contact">
+    </div>
+    <div id="about">
+    </div>
   </div>
   <footer class="footer" layout="column">
     <div class="top" layout="row" layout-align="center start">
@@ -69,7 +233,6 @@
         <span>info@wheels-control.com</span><br/>
         <span>123-456-7890</span><br/>
         <span>F</span> <span>T</span> <span>IG</span> <span>PIN</span>
-
       </div>
       <div flex="25" layout-margin>
         <h3>Featured Classes</h3>
@@ -88,17 +251,14 @@
         <h3>Contact Us</h3>
         <md-content layout="row" layout-sm="column">
           <form layout="column" flex>
-            <md-input-container class="md-block">
-              <label>Name</label>
-              <input ng-model="user.name" type="text" required>
+            <md-input-container md-no-float class="md-block">
+              <input ng-model="user.name" type="text" placeholder="Name" required>
             </md-input-container>
-            <md-input-container class="md-block">
-              <label>Email</label>
-              <input ng-model="user.email" type="email" required>
+            <md-input-container md-no-float class="md-block">
+              <input ng-model="user.email" type="email" placeholder="Email" required>
             </md-input-container>
-            <md-input-container class="md-block">
-              <label>Message</label>
-              <textarea ng-model="user.message" columns="1" md-maxlength="150" rows="2" required></textarea>
+            <md-input-container md-no-float class="md-block">
+              <textarea ng-model="user.message" placeholder="Message" columns="1" md-maxlength="150" rows="2" required></textarea>
             </md-input-container>
             <md-button class="md-raised md-primary" flex>
               Send message
@@ -107,9 +267,8 @@
         </md-content>
       </div>
     </div>
-    <div>
-    </div>
-    <div>
+    <div class="bottom">
+
     </div>
     
   </footer>
