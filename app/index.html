@@ -3,8 +3,10 @@
 <head>
   <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
   <link rel="stylesheet" href="/bower_components/angular-material/angular-material.css">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <style type="text/css">
+    p{
+      text-align: justify;
+    }
     .header{
       margin-top: 33px;
       position: absolute;
@@ -16,6 +18,7 @@
       color: #88949b;
       font-size: 15px;
       line-height: 24px;
+      margin-top: 20px;
     }
     .footer .top{
       background: #353a3d;
@@ -25,6 +28,9 @@
     #map{
       min-width: 360px;
       min-height: 360px;
+    }
+    md-card-title{
+      padding: 10px;
     }
   </style>
 </head>
@@ -58,16 +64,21 @@
       <img src="/app/public/images/nljj3gxvnaxqqpxbj0na.jpg" style="width:100%;">
     </div>
     <div id="classes" flex>
-      <md-whiteframe class="md-whiteframe-3dp" layout="column" layout-align="start center" >
-        <h1>Dishes</h1>
-        <div layout="row" flex-offset="10" flex="80" layout-wrap>
-          <md-card flex="30">
+      <md-whiteframe class="md-whiteframe-3dp" layout="column" layout-align="start center" style="background: #e5eaed;">
+        <h1>Upcoming Classes</h1>
+        <div layout="row" layout-sm="column" flex="80" flex-sm="100" flex-offset="10" flex-offset-sm="0" layout-wrap class="md-padding">
+          <md-card flex="30" flex-sm="100">
             <img ng-src="/app/public/images/tempura.jpg" class="md-card-image" alt="Tempura">
             <md-card-title>
               <md-card-title-text>
                 <span class="md-headline">Tempura</span>
               </md-card-title-text>
             </md-card-title> 
+            <md-card-content>
+              <p>
+                Raw vegetables or seafood are dunked in a simple batter and then briefly fried in a mild-flavored oil, just long enough for the batter to crisp and the food to cook through.
+              </p>
+            </md-card-content>
             <md-card-actions layout="row" layout-align="start center">
               <md-card-icon-actions>
                 <md-button class="md-icon-button" aria-label="Favorite">
@@ -77,22 +88,23 @@
                   <md-icon md-svg-icon="img/icons/share-arrow.svg"></md-icon>
                 </md-button>
               </md-card-icon-actions>
+              <span flex></span>
               <md-button>Action 1</md-button>
               <md-button>Action 2</md-button>
             </md-card-actions>
-            <md-card-content>
-              <p>
-                Raw vegetables or seafood are dunked in a simple batter and then briefly fried in a mild-flavored oil, just long enough for the batter to crisp and the food to cook through.
-              </p>
-            </md-card-content>
           </md-card>
-          <md-card flex="30">
+          <md-card flex="30" flex-sm="100">
             <img ng-src="/app/public/images/maki.jpg" class="md-card-image" alt="Maki">
             <md-card-title>
               <md-card-title-text>
                 <span class="md-headline">Makizushi</span>
               </md-card-title-text>
             </md-card-title>
+            <md-card-content>
+              <p>Makizushi is made by wrapping up fillings in rice and nori seaweed using some local , tasty ingredients
+                   Nikujaga is a very  traditional comfort food in Japan  . It's the Japanese version of beef stew  with potatoes and other vegetables simmered in a sweet soy stock until meltingly tender.
+              </p>
+            </md-card-content>
             <md-card-actions layout="row" layout-align="start center">
               <md-card-icon-actions>
                 <md-button class="md-icon-button" aria-label="Favorite">
@@ -102,22 +114,23 @@
                   <md-icon md-svg-icon="img/icons/share-arrow.svg"></md-icon>
                 </md-button>
               </md-card-icon-actions>
+              <span flex></span>
               <md-button>Action 1</md-button>
               <md-button>Action 2</md-button>
             </md-card-actions>
-            <md-card-content>
-              <p>Makizushi is made by wrapping up fillings in rice and nori seaweed using some local , tasty ingredients
-                   Nikujaga is a very  traditional comfort food in Japan  . It’s the Japanese version of beef stew  with potatoes and other vegetables simmered in a sweet soy stock until meltingly tender.
-              </p>
-            </md-card-content>
           </md-card>
-          <md-card flex="30">
+          <md-card flex="30" flex-sm="100">
             <img ng-src="/app/public/images/chickn.jpg" class="md-card-image" alt="Chicken / Fish Teriyaki">
             <md-card-title>
               <md-card-title-text>
                 <span class="md-headline">Chicken / Fish Teriyaki</span>
               </md-card-title-text>
             </md-card-title>
+            <md-card-content>
+              <p>
+                Pieces of chicken breast  marinated in  soy sauce and  seasoned with sake, ginger, and sugar with very light but savory flavor
+              </p>
+            </md-card-content>
             <md-card-actions layout="row" layout-align="start center">
               <md-card-icon-actions>
                 <md-button class="md-icon-button" aria-label="Favorite">
@@ -127,22 +140,23 @@
                   <md-icon md-svg-icon="img/icons/share-arrow.svg"></md-icon>
                 </md-button>
               </md-card-icon-actions>
+              <span flex></span>
               <md-button>Action 1</md-button>
               <md-button>Action 2</md-button>
             </md-card-actions>
-            <md-card-content>
-              <p>
-                Pieces of chicken breast  marinated in  soy sauce and  seasoned with sake, ginger, and sugar with very light but savory flavor
-              </p>
-            </md-card-content>
           </md-card>
-          <md-card flex="30">
+          <md-card flex="30" flex-sm="100">
             <img ng-src="/app/public/images/tempura.jpg" class="md-card-image" alt="Tempura">
             <md-card-title>
               <md-card-title-text>
                 <span class="md-headline">Tempura</span>
               </md-card-title-text>
             </md-card-title>
+            <md-card-content>
+              <p>
+                Raw vegetables or seafood are dunked in a simple batter and then briefly fried in a mild-flavored oil, just long enough for the batter to crisp and the food to cook through.
+              </p>
+            </md-card-content>
             <md-card-actions layout="row" layout-align="start center">
               <md-card-icon-actions>
                 <md-button class="md-icon-button" aria-label="Favorite">
@@ -152,22 +166,23 @@
                   <md-icon md-svg-icon="img/icons/share-arrow.svg"></md-icon>
                 </md-button>
               </md-card-icon-actions>
+              <span flex></span>
               <md-button>Action 1</md-button>
               <md-button>Action 2</md-button>
             </md-card-actions> 
-            <md-card-content>
-              <p>
-                Raw vegetables or seafood are dunked in a simple batter and then briefly fried in a mild-flavored oil, just long enough for the batter to crisp and the food to cook through.
-              </p>
-            </md-card-content>
           </md-card>
-          <md-card flex="30">
+          <md-card flex="30" flex-sm="100">
             <img ng-src="/app/public/images/maki.jpg" class="md-card-image" alt="Maki">
             <md-card-title>
               <md-card-title-text>
                 <span class="md-headline">Makizushi</span>
               </md-card-title-text>
             </md-card-title>
+            <md-card-content>
+              <p>Makizushi is made by wrapping up fillings in rice and nori seaweed using some local , tasty ingredients
+                Nikujaga is a very  traditional comfort food in Japan  . It’s the Japanese version of beef stew  with potatoes and other vegetables simmered in a sweet soy stock until meltingly tender.
+              </p>
+            </md-card-content>
             <md-card-actions layout="row" layout-align="start center">
               <md-card-icon-actions>
                 <md-button class="md-icon-button" aria-label="Favorite">
@@ -177,22 +192,23 @@
                   <md-icon md-svg-icon="img/icons/share-arrow.svg"></md-icon>
                 </md-button>
               </md-card-icon-actions>
+              <span flex></span>
               <md-button>Action 1</md-button>
               <md-button>Action 2</md-button>
             </md-card-actions>
-            <md-card-content>
-              <p>Makizushi is made by wrapping up fillings in rice and nori seaweed using some local , tasty ingredients
-                Nikujaga is a very  traditional comfort food in Japan  . It’s the Japanese version of beef stew  with potatoes and other vegetables simmered in a sweet soy stock until meltingly tender.
-              </p>
-            </md-card-content>
           </md-card>
-          <md-card flex="30">
+          <md-card flex="30" flex-sm="100">
             <img ng-src="/app/public/images/chickn.jpg" class="md-card-image" alt="Chicken / Fish Teriyaki">
             <md-card-title>
               <md-card-title-text>
                 <span class="md-headline">Chicken / Fish Teriyaki</span>
               </md-card-title-text>
             </md-card-title>
+            <md-card-content>
+              <p>
+                Pieces of chicken breast  marinated in  soy sauce and  seasoned with sake, ginger, and sugar with very light but savory flavor
+              </p>
+            </md-card-content>
             <md-card-actions layout="row" layout-align="start center">
               <md-card-icon-actions>
                 <md-button class="md-icon-button" aria-label="Favorite">
@@ -202,21 +218,17 @@
                   <md-icon md-svg-icon="img/icons/share-arrow.svg"></md-icon>
                 </md-button>
               </md-card-icon-actions>
+              <span flex></span>
               <md-button>Action 1</md-button>
               <md-button>Action 2</md-button>
             </md-card-actions>
-            <md-card-content>
-              <p>
-                Pieces of chicken breast  marinated in  soy sauce and  seasoned with sake, ginger, and sugar with very light but savory flavor
-              </p>
-            </md-card-content>
           </md-card>
         </div>
       </md-white-frame>
     </div>
     <div id="location" flex layout="column" layout-align="start center">
       <h2>Location</h2>
-      <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" width="642" height="443" src="https://maps.google.com/maps?hl=en&q=tokyo&ie=UTF8&t=roadmap&z=6&iwloc=B&output=embed"></iframe>
+      <!--iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" width="642" height="443" src="https://maps.google.com/maps?hl=en&q=tokyo&ie=UTF8&t=roadmap&z=6&iwloc=B&output=embed"></iframe-->
     </div>
     <div id="contact">
     </div>
