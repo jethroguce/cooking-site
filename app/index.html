@@ -43,16 +43,16 @@
         </h2>
         <span flex></span>
         <div layout="row" layout-sm="column" layout-align="end center">
-          <md-button ng-href="#classes">
-            Dishes
+          <md-button ng-href="#classes" du-smooth-scroll du-scrollspy>
+            Classes
           </md-button>
-          <md-button ng-href="#location">
+          <md-button ng-href="#location" du-smooth-scroll du-scrollspy>
             Location
           </md-button>
-          <md-button ng-href="#contact">
+          <md-button ng-href="#contact" du-smooth-scroll du-scrollspy>
             Contact
           </md-button>
-          <md-button ng-href="#about">
+          <md-button ng-href="#about" du-smooth-scroll du-scrollspy>
             About
           </md-button>
         </div>
@@ -61,7 +61,7 @@
   </header>
   <div class="content" ng-controller="YourController" layout="column">
     <div id="home" flex>
-      <img src="/app/public/images/nljj3gxvnaxqqpxbj0na.jpg" style="width:100%;">
+      <img src="/app/public/images/1410_food_main1.jpg" style="width:100%;">
     </div>
     <div id="classes" flex>
       <md-whiteframe class="md-whiteframe-3dp" layout="column" layout-align="start center" style="background: #e5eaed;">
@@ -288,16 +288,17 @@
     
   </footer>
 
-  <script src="/bower_components/angular/angular.js"></script>
-  <script src="/bower_components/angular-aria/angular-aria.js"></script>
-  <script src="/bower_components/angular-animate/angular-animate.js"></script>
-  <script src="/bower_components/angular-material/angular-material.js"></script>
+  <script src="/bower_components/angular/angular.min.js"></script>
+  <script src="/bower_components/angular-aria/angular-aria.min.js"></script>
+  <script src="/bower_components/angular-animate/angular-animate.min.js"></script>
+  <script src="/bower_components/angular-material/angular-material.min.js"></script>
+  <script src="/bower_components/angular-scroll/angular-scroll.min.js"></script>
   <script>
 
     // Include app dependency on ngMaterial
 
-    angular.module( 'YourApp', [ 'ngMaterial' ] )
-      .controller("YourController", function () {
+    angular.module( 'YourApp', [ 'ngMaterial', 'duScroll' ] )
+      .controller("YourController", function ($scope, $document) {
         // body...
       } )
       .controller("headerController", function(){
