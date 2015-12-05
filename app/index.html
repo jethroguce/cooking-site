@@ -9,9 +9,16 @@
     }
     .header{
       margin-top: 33px;
-      position: absolute;
+      position: fixed;
       width: 100%;
       z-index: 9;
+    }
+    .header .navbar{
+      background: rgba(255, 255, 255, 0.5);
+    }
+
+    .header .navbar .active {
+      background: rgb(150, 240, 255);
     }
 
     .footer{
@@ -36,7 +43,7 @@
 </head>
 <body layout="column">
   <header class="header" ng-controller="headerController" layout="row" layout-align="center">
-    <md-toolbar layout="column" flex="80" layout-fill>
+    <md-toolbar class="navbar" layout="column" flex="80" layout-fill>
       <div class="md-toolbar-tools">
         <h2>
           <span>Experience Japan</span>
