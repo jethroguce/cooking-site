@@ -1,11 +1,3 @@
-import http.server
-import socketserver
+from app import app
 
-PORT = 8000
-
-Handler = http.server.SimpleHTTPRequestHandler
-
-httpd = socketserver.TCPServer(("", PORT), Handler)
-
-print("serving at port", PORT)
-httpd.serve_forever()
+app.run(host='127.0.0.1', port=8080, debug=True)

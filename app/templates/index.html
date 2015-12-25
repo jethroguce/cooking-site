@@ -2,7 +2,7 @@
 <html ng-app="YourApp">
 <head>
   <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
-  <link rel="stylesheet" href="/bower_components/angular-material/angular-material.css">
+  <link rel="stylesheet" href="{{url_for('static', filename='bower_components/angular-material/angular-material.min.css')}}">
   <style type="text/css">
     p{
       text-align: justify;
@@ -72,14 +72,14 @@
   </header>
   <div class="content" ng-controller="YourController" layout="column">
     <div id="home" flex>
-      <img src="/app/public/images/1410_food_main1.jpg" style="width:100%;">
+      <img src="{{url_for('static', filename='images/1410_food_main1.jpg')}}" style="width:100%;">
     </div>
     <div id="classes" flex>
       <md-whiteframe class="md-whiteframe-3dp" layout="column" layout-align="start center" style="background: #e5eaed;">
         <h1>Upcoming Classes</h1>
         <div layout="row" layout-sm="column" flex="80" flex-sm="100" flex-offset="10" flex-offset-sm="0" layout-wrap class="md-padding">
           <md-card flex="30" flex-sm="100">
-            <img ng-src="/app/public/images/tempura.jpg" class="md-card-image" alt="Tempura">
+            <img ng-src="{{url_for('static', filename='images/tempura.jpg')}}" class="md-card-image" alt="Tempura">
             <md-card-title>
               <md-card-title-text>
                 <span class="md-headline">Tempura</span>
@@ -104,7 +104,7 @@
             </md-card-actions>
           </md-card>
           <md-card flex="30" flex-sm="100">
-            <img ng-src="/app/public/images/maki.jpg" class="md-card-image" alt="Maki">
+            <img ng-src="{{url_for('static', filename='images/maki.jpg')}}" class="md-card-image" alt="Maki">
             <md-card-title>
               <md-card-title-text>
                 <span class="md-headline">Makizushi</span>
@@ -129,7 +129,7 @@
             </md-card-actions>
           </md-card>
           <md-card flex="30" flex-sm="100">
-            <img ng-src="/app/public/images/chickn.jpg" class="md-card-image" alt="Chicken / Fish Teriyaki">
+            <img ng-src="{{url_for('static', filename='images/chickn.jpg')}}" class="md-card-image" alt="Chicken / Fish Teriyaki">
             <md-card-title>
               <md-card-title-text>
                 <span class="md-headline">Chicken / Fish Teriyaki</span>
@@ -154,7 +154,7 @@
             </md-card-actions>
           </md-card>
           <md-card flex="30" flex-sm="100">
-            <img ng-src="/app/public/images/tempura.jpg" class="md-card-image" alt="Tempura">
+            <img ng-src="{{url_for('static', filename='images/tempura.jpg')}}" class="md-card-image" alt="Tempura">
             <md-card-title>
               <md-card-title-text>
                 <span class="md-headline">Tempura</span>
@@ -179,7 +179,7 @@
             </md-card-actions> 
           </md-card>
           <md-card flex="30" flex-sm="100">
-            <img ng-src="/app/public/images/maki.jpg" class="md-card-image" alt="Maki">
+            <img ng-src="{{url_for('static', filename='images/maki.jpg')}}" class="md-card-image" alt="Maki">
             <md-card-title>
               <md-card-title-text>
                 <span class="md-headline">Makizushi</span>
@@ -204,7 +204,7 @@
             </md-card-actions>
           </md-card>
           <md-card flex="30" flex-sm="100">
-            <img ng-src="/app/public/images/chickn.jpg" class="md-card-image" alt="Chicken / Fish Teriyaki">
+            <img ng-src="{{url_for('static', filename='images/chickn.jpg')}}" class="md-card-image" alt="Chicken / Fish Teriyaki">
             <md-card-title>
               <md-card-title-text>
                 <span class="md-headline">Chicken / Fish Teriyaki</span>
@@ -293,12 +293,12 @@
     
   </footer>
 
-  <script src="/bower_components/angular/angular.min.js"></script>
-  <script src="/bower_components/angular-aria/angular-aria.min.js"></script>
-  <script src="/bower_components/angular-animate/angular-animate.min.js"></script>
-  <script src="/bower_components/angular-material/angular-material.min.js"></script>
+  <script src="{{url_for('static', filename='bower_components/angular/angular.min.js')}}"></script>
+  <script src="{{url_for('static', filename='bower_components/angular-aria/angular-aria.min.js')}}"></script>
+  <script src="{{url_for('static', filename='bower_components/angular-animate/angular-animate.min.js')}}"></script>
+  <script src="{{url_for('static', filename='bower_components/angular-material/angular-material.min.js')}}"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/angular-material-icons/0.6.0/angular-material-icons.min.js"></script> 
-  <script src="/bower_components/angular-scroll/angular-scroll.min.js"></script>
+  <script src="{{url_for('static', filename='bower_components/angular-scroll/angular-scroll.min.js')}}"></script>
   <script>
 
     // Include app dependency on ngMaterial
